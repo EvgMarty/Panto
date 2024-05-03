@@ -1,10 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
-body {
-  font-family: "DM Sans", sans-serif;
-  font-family: "Ubuntu", sans-serif;
-}
-
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap");
+@import url(../fonts/gilroy/stylesheet.css);
 * {
   padding: 0px;
   margin: 0px;
@@ -89,4 +85,29 @@ label {
 
 legend {
   display: block;
+}
+
+html,
+body {
+  font-family: var(--font-Gilroy);
+  color: var(--text-color);
+  background: var(--backgroung);
+}
+
+:root {
+  --text-color: #1e1e1e;
+  --accent: #e58411;
+  --header-text-color: #ffffff;
+  --footer-text-color: #ffffff;
+  --text-muted: #f7f7f7;
+  --card-blue: #0d1b39;
+  --backgroung: #ffffff;
+  --bg-special: #f7f7f7;
+  --bg-footer: #2d2f33;
+  --ui-orang: #e58411;
+  --ui-biruza: #00d6c9;
+  --ui-gray: #7c7c7c;
+  --font-Gilroy: "Gilroy", sans-serif;
+  --font-DMSans: "DM Sans", sans-serif;
+  --font-Inter: "Inter", sans-serif;
 }/*# sourceMappingURL=main.css.map */
