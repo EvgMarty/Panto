@@ -26,3 +26,10 @@
   --font-DMSans: 'DM Sans', sans-serif;
   --font-Inter: 'Inter', sans-serif;
 }
+
+// mixins
+@mixin retina-bg($img) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: $img;
+  }
+}

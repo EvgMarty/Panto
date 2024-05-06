@@ -1,0 +1,46 @@
+.info-dot {
+  position: relative;
+  cursor: pointer;
+}
+
+.info-dot_circle {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--backgroung);
+}
+
+.info-dot_radius {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  border: 0.862px solid rgb(225, 225, 225, 0.6);
+  background: rgb(225, 225, 225, 0.15);
+  backdrop-filter: blur(4px);
+
+  animation: pulse 1s infinite alternate;
+}
+
+.info-dot:hover .info-dot_radius {
+  animation: pulse 1s infinite alternate paused;
+}
+
+.info-dot:hover .info-dot_circle {
+  background-color: var(--ui-orang);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}

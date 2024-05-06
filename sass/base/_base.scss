@@ -7,3 +7,12 @@ body {
   color: var(--text-color);
   background: var(--backgroung);
 }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media (max-width: 1300px) {
+    padding: 0 15px;
+  }
+}
