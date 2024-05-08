@@ -2,6 +2,7 @@
   margin: 45px auto 0;
 
   display: flex;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
   max-width: 344px;
@@ -17,9 +18,11 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
+  flex-grow: 1;
 }
 .search-form_btn {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 40px;

@@ -15,6 +15,10 @@ body {
   @media (max-width: 1300px) {
     padding: 0 15px;
   }
+
+  &--small {
+    max-width: 1064px;
+  }
 }
 
 .hidden {

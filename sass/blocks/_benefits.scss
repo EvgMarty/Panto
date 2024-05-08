@@ -5,6 +5,7 @@
 .benefits-grid {
   display: grid;
   grid-template-columns: 3fr 3fr 3fr 3fr;
+  align-items: center;
   gap: 40px;
 }
 .benefits-title {
