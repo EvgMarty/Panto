@@ -25,7 +25,6 @@ function closeHint() {
 }
 
 // swiper
-
 const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 42,
@@ -52,4 +51,42 @@ const swiper = new Swiper('.swiper', {
     nextEl: '#slider-next',
     prevEl: '#slider-prev',
   },
+});
+
+//Tabs
+const tabsBtn = document.querySelectorAll('[data-tab]');
+const sliderProduct = document.querySelectorAll('[data-tab_content]');
+
+tabsBtn.forEach((item) => {
+  item.addEventListener('click', () => {
+    //remove active class all the tabs
+    tabsBtn.forEach((item) => {
+      item.classList.remove('tab-controls__btn--active');
+    });
+
+    //add active class
+    item.classList.add('tab-controls__btn--active');
+
+    // recieve data atribut
+    let dataSet = item.dataset.tab;
+
+    let showProduct = document.querySelectorAll(
+      `[data-tab_content="${dataSet}"]`
+    );
+
+    // hidden all the goods and show other
+    sliderProduct.forEach((product) => {
+      if (dataSet == 'all') {
+        product.classList.remove('hidden');
+      } else {
+        product.classList.add('hidden');
+
+        showProduct.forEach((item) => {
+          item.classList.remove('hidden');
+        });
+      }
+
+      swiper.update();
+    });
+  });
 });

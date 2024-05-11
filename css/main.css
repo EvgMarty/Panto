@@ -209,6 +209,16 @@ body {
   font-weight: 500;
 }
 
+.nav-list_link--dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-list_link--dropdown::after {
+  content: url(./../img/icons/arrow_dawn.svg);
+  height: 18px;
+}
+
 .cart {
   position: relative;
   justify-self: end;
@@ -451,6 +461,9 @@ body {
 }
 .tab-controls__btn--active {
   background-color: #ffffff;
+}
+.tab-controls__btn--active:hover {
+  background-color: #fff;
 }
 
 .card {

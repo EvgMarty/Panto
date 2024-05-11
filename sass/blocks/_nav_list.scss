@@ -11,5 +11,15 @@
 }
 .nav-list_item {
 }
+
 .nav-list_link {
+  &--dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    &::after {
+      content: url(./../img/icons/arrow_dawn.svg);
+      height: 18px;
+    }
+  }
 }
