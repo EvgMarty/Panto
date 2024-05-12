@@ -209,14 +209,58 @@ body {
   font-weight: 500;
 }
 
+.nav-list_item {
+  position: relative;
+}
+
+.nav-list_link {
+  transition: all 0.1s ease-in;
+}
+.nav-list_link:hover {
+  color: var(--accent);
+}
 .nav-list_link--dropdown {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding-bottom: 10px;
 }
 .nav-list_link--dropdown::after {
   content: url(./../img/icons/arrow_dawn.svg);
   height: 18px;
+}
+
+.nav-list__subnav {
+  opacity: 0;
+  position: absolute;
+  width: 140px;
+  pointer-events: none;
+  left: 0;
+  top: 100%;
+  translate: 0% 5%;
+  transition: all 0.2s ease-in;
+}
+
+.nav-list_item:hover .nav-list__subnav {
+  opacity: 1;
+  pointer-events: all;
+  translate: 0% 0%;
+}
+
+.sub-nav {
+  display: grid;
+  gap: 16px;
+  font-size: 14px;
+  background-color: var(--bg-footer);
+  padding: 16px 20px;
+  border-radius: 16px;
+}
+
+.sub-nav__link {
+  transition: all 0.1s ease-in;
+}
+.sub-nav__link:hover {
+  color: var(--accent);
 }
 
 .cart {
