@@ -5,4 +5,14 @@
   margin-bottom: 86px;
 }
 
+.nav_logo {
+  align-self: center;
+}
 
+.nav__burger-menu {
+  display: none;
+
+  @include tablet() {
+    display: block;
+  }
+}

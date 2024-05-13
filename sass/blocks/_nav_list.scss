@@ -9,6 +9,10 @@
 
   font-size: 18px;
   font-weight: 500;
+
+  @include tablet() {
+    display: none;
+  }
 }
 .nav-list_item {
   position: relative;
