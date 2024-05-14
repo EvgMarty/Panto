@@ -13,6 +13,10 @@
   border: 0.862px solid rgb(225, 225, 225, 0.6);
   background: rgb(225, 225, 225, 0.15);
   backdrop-filter: blur(4px);
+
+  @include mobile-xl() {
+    display: none;
+  }
 }
 .search-form_input {
   font-size: 18px;

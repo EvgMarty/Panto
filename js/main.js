@@ -90,3 +90,17 @@ tabsBtn.forEach((item) => {
     });
   });
 });
+
+//Mobile nav
+
+const mobNavOpenBtn = document.querySelector('#mobile-nav-open-btn');
+const mobNavCloseBtn = document.querySelector('#mobile-nav-close-btn');
+const mobNav = document.querySelector('#mobile-nav');
+
+mobNavOpenBtn.addEventListener('click', () => {
+  mobNav.classList.add('mobile-nav__wrapper--open');
+});
+
+mobNavCloseBtn.addEventListener('click', () => {
+  mobNav.classList.remove('mobile-nav__wrapper--open');
+});

@@ -15,7 +15,7 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a class="nav_logo" href="#">Panto</a>
+          <a class="logo" href="#">Panto</a>
 
           <ul class="nav-list">
             <li class="nav-list_item">
@@ -58,12 +58,12 @@
             </a>
           </div>
 
-          <button class="nav__burger-menu">
+          <button id="mobile-nav-open-btn" class="nav__burger-menu">
             <img src="./img/icons/burgermenu.svg" alt="open navigation" />
           </button>
         </nav>
 
-        <div class="header-content hidden">
+        <div class="header-content">
           <h1 class="header-title">
             Make your interior more minimalistic & modern
           </h1>
@@ -84,7 +84,7 @@
           </form>
         </div>
 
-        <div class="header__dot-vasa hidden">
+        <div class="header__dot header__dot--vasa">
           <button class="info-dot">
             <div class="info-dot_circle"></div>
             <div class="info-dot_radius"></div>
@@ -114,7 +114,7 @@
           </div>
         </div>
 
-        <div class="header__dot-sofa hidden">
+        <div class="header__dot header__dot--sofa">
           <button class="info-dot">
             <div class="info-dot_circle"></div>
             <div class="info-dot_radius"></div>
@@ -143,7 +143,7 @@
           </div>
         </div>
 
-        <div class="header__dot-item hidden">
+        <div class="header__dot header__dot--item">
           <button class="info-dot">
             <div class="info-dot_circle"></div>
             <div class="info-dot_radius"></div>
@@ -173,7 +173,7 @@
           </div>
         </div>
 
-        <div class="header__dot-wall hidden">
+        <div class="header__dot header__dot--wall">
           <button class="info-dot">
             <div class="info-dot_circle"></div>
             <div class="info-dot_radius"></div>
@@ -202,55 +202,6 @@
             </label>
           </div>
         </div>
-      </div>
-
-      <!-- mobile navigation -->
-      <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__header">
-          <a href="#" class="mobile-cart">
-            <div class="cart">
-              <img class="cart_img" src="/./img/icons/Bag.svg" alt="card" />
-              <div class="cart_count">0</div>
-            </div>
-            Cart
-          </a>
-
-          <button class="mobile-nav__btn-close">
-            <img src="./img/icons/close_menu.svg" alt="close nabigation" />
-          </button>
-        </div>
-
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link mobile-nav__link--dropdown" href="#"
-              >Furniture</a
-            >
-
-            <ul class="mobile__sub-nav">
-              <li class="mobile__sub-nav__item">
-                <a class="mobile__sub-nav__link" href="#">Home</a>
-              </li>
-              <li class="mobile__sub-nav__item">
-                <a class="mobile__sub-nav__link" href="#">Services</a>
-              </li>
-              <li class="mobile__sub-nav__item">
-                <a class="mobile__sub-nav__link" href="#">Products</a>
-              </li>
-              <li class="mobile__sub-nav__item">
-                <a class="mobile__sub-nav__link" href="#">Contucts</a>
-              </li>
-            </ul>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#">Shop</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#">About Us</a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#">Contact</a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -926,6 +877,55 @@
         </div>
       </div>
     </footer>
+
+    <!-- mobile navigation -->
+    <div id="mobile-nav" class="mobile-nav__wrapper">
+      <div class="mobile-nav__header">
+        <a href="#" class="mobile-cart">
+          <div class="cart">
+            <img class="cart_img" src="/./img/icons/Bag.svg" alt="card" />
+            <div class="cart_count">0</div>
+          </div>
+          Cart
+        </a>
+
+        <button id="mobile-nav-close-btn" class="mobile-nav__btn-close">
+          <img src="./img/icons/close_menu.svg" alt="close nabigation" />
+        </button>
+      </div>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link mobile-nav__link--dropdown" href="#"
+            >Furniture</a
+          >
+
+          <ul class="mobile__sub-nav">
+            <li class="mobile__sub-nav__item">
+              <a class="mobile__sub-nav__link" href="#">Home</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a class="mobile__sub-nav__link" href="#">Services</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a class="mobile__sub-nav__link" href="#">Products</a>
+            </li>
+            <li class="mobile__sub-nav__item">
+              <a class="mobile__sub-nav__link" href="#">Contucts</a>
+            </li>
+          </ul>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#">Shop</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#">About Us</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>

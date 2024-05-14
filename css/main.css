@@ -143,11 +143,6 @@ body {
     background-image: url(./../img/header/header_bg_x2.jpg);
   }
 }
-@media (max-width: 992px) {
-  .header {
-    position: static;
-  }
-}
 .header a {
   color: var(--header-text-color);
 }
@@ -156,43 +151,50 @@ body {
   text-align: center;
 }
 .header-content p {
-  font-size: 24px;
+  font-size: clamp(16px, 0.857rem + 0.71vw, 24px);
   font-weight: 400;
-  line-height: 38.4px;
+  line-height: 1.6;
   max-width: 606px;
   margin: 0 auto;
   opacity: 0.8;
+  text-wrap: balance;
 }
 
 .header-title {
   margin-bottom: 14px;
-  font-size: 80px;
+  font-size: clamp(28px, 0.821rem + 4.64vw, 80px);
   font-weight: 700;
   text-transform: capitalize;
   letter-spacing: -0.8px;
-  line-height: 104px;
+  line-height: 1.3;
+  text-wrap: balance;
 }
 
-.header__dot-vasa {
+.header__dot {
   position: absolute;
+}
+@media (max-width: 819px) {
+  .header__dot {
+    display: none;
+  }
+}
+
+.header__dot--vasa {
   left: 7.0833333333%;
   top: 67.6199261993%;
 }
 
-.header__dot-sofa {
-  position: absolute;
+.header__dot--sofa {
   left: 20.4861111111%;
   top: 62.7306273063%;
 }
 
-.header__dot-item {
-  position: absolute;
+.header__dot--item {
   left: 55.4861111111%;
   top: 70.5719557196%;
 }
 
-.header__dot-wall {
-  position: absolute;
+.header__dot--wall {
   right: 3.2638888889%;
   top: 75.184501845%;
 }
@@ -201,11 +203,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
   gap: 20px;
-  margin-bottom: 86px;
-}
-
-.nav_logo {
-  align-self: center;
+  margin-bottom: clamp(25px, 0.071rem + 5.89vw, 86px);
 }
 
 .nav__burger-menu {
@@ -277,8 +275,8 @@ body {
   right: 0;
   bottom: 0;
   width: 320px;
+  z-index: 4;
   background-color: var(--bg-footer);
-  color: var(--footer-text-color);
   font-size: 18px;
   padding: 30px 30px;
 }
@@ -286,6 +284,13 @@ body {
   .mobile-nav__wrapper--open {
     display: block;
   }
+}
+.mobile-nav__wrapper a {
+  color: var(--footer-text-color);
+  transition: color 0.2s ease-in;
+}
+.mobile-nav__wrapper a:hover {
+  color: #fff;
 }
 
 .mobile-nav__header {
@@ -373,6 +378,11 @@ body {
   border: 0.862px solid rgba(225, 225, 225, 0.6);
   background: rgba(225, 225, 225, 0.15);
   backdrop-filter: blur(4px);
+}
+@media (max-width: 819px) {
+  .search-form {
+    display: none;
+  }
 }
 
 .search-form_input {
@@ -770,7 +780,7 @@ body {
 .logo {
   align-self: center;
   font-family: var(--font-Gilroy);
-  font-size: 28px;
+  font-size: clamp(18px, 0.946rem + 0.89vw, 28px);
   font-weight: 700;
   letter-spacing: 0.28px;
   text-transform: capitalize;
