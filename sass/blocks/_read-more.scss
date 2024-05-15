@@ -9,10 +9,10 @@
 
   color: var(--accent);
 
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 
   &::after {
-    content: url(../../img/icons/arrow_right.svg);
+    content: url(../img/icons/arrow_right.svg);
     height: 24px;
   }
 
