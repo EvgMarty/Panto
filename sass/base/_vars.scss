@@ -34,16 +34,27 @@
   }
 }
 
+
+@mixin desc-small() {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
 @mixin tablet() {
   @media (max-width: 992px) {
     @content;
   }
 }
 
-
-
 @mixin mobile-xl() {
   @media (max-width: 819px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 629px) {
     @content;
   }
 }

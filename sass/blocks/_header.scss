@@ -10,6 +10,13 @@
 
   @include retina-bg(url(./../img/header/header_bg_x2.jpg));
 
+  @include mobile(){
+    padding-top: 20px;
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset;
+  }
+
   a {
     color: var(--header-text-color);
   }

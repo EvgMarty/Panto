@@ -26,25 +26,25 @@ function closeHint() {
 
 // swiper
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 42,
   loop: true,
   freeMode: true,
 
-  // breakpoints: {
-  //   640: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 40,
-  //   },
-  //   1024: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 50,
-  //   },
-  // },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    920: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1230: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
 
   // Navigation arrows
   navigation: {

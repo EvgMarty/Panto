@@ -1,5 +1,5 @@
 .products {
-  padding: 107px 0 50px 0;
+  padding: clamp(60px, 2.911rem + 4.2vw, 107px) 0 50px 0;
   background: var(--bg-special);
 }
 
@@ -14,7 +14,13 @@
   text-align: center;
 }
 .products-slider {
-  margin-bottom: 60px;
+  margin-bottom: clamp(20px, 0.06rem + 5.95vw, 60px);
+  @include desc-small() {
+    padding: 0 40px;
+  }
+  @include desc-small() {
+    padding: 0 20px;
+  }
 }
 .products-link {
   text-align: center;

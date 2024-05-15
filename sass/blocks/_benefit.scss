@@ -3,11 +3,16 @@
   font-size: 24px;
   font-weight: 700;
 }
+
 .benefit-text {
   font-size: 16px;
   margin-bottom: 14px;
   font-weight: 400;
   line-height: 1.85;
+
+  @include mobile() {
+    line-height: 1.4;
+  }
 
   opacity: 0.8;
 }

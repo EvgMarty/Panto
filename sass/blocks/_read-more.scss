@@ -9,6 +9,8 @@
 
   color: var(--accent);
 
+  transition: all .1s ease-in;
+
   &::after {
     content: url(../../img/icons/arrow_right.svg);
     height: 24px;
@@ -16,5 +18,9 @@
 
   &--xl {
     font-size: 18px;
+  }
+
+  &:hover {
+    gap: 20px;
   }
 }
