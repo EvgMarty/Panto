@@ -600,7 +600,7 @@ body {
   transition: all 0.1s ease-in;
 }
 .read-more::after {
-  content: url(../img/icons/arrow_right.svg);
+  content: url(./../img/icons/arrow_right.svg);
   height: 24px;
 }
 .read-more--xl {
